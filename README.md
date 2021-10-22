@@ -1,6 +1,6 @@
 # Sliders Vanilla Javascript
 
-A collection of pure javascript sliders.
+A collection of pure CSS3 & JavaScript sliders.
 
 ## Collection of useful libs
 
