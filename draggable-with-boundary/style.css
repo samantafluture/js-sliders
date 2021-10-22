@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+i {
+    color: #ffffff;
+    font-size: 3rem;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+i:hover {
+    color: rgb(167, 11, 245);
+}
+
+.slider {
+    position: absolute;
+    left: 10%;
+    top: 30%;
+    width: 80%;
+    height: 200px;
+
+    /* this is what makes the images to be hidden */
+    overflow: hidden;
+
+    /* border: 1px solid red; */
+}
+
+.slider-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    pointer-events: none;
+
+    /* border: 1px solid blue; */
+}
+
+.slider-img {
+    height: 100%;
+    background-color: black;
+    text-align: center;
+    padding: 3rem;
+
+    /* border: 1px solid green; */
+}
