@@ -1,0 +1,110 @@
+.carousel {
+    position: relative;
+
+    height: 40rem;
+    width: 45rem;
+
+    border-radius: 10px 10px 0 0;
+
+    /*  não ver nada que esteja antes ou depois */
+    overflow: hidden;
+}
+
+.carousel__botao {
+    position: absolute;
+
+    width: 2.25rem;
+    height: 2.25rem;
+
+    /* centralizam os botões de voltar e avançar no meio da tela */
+    top: 50%;
+    transform: translateY(-50%);
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: var(--rosa-claro-transparente);
+    background-size: .5rem;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding: .2rem;
+    
+    /* garantir que os botões fiquem à frente da imagem */
+    z-index: 10;
+}
+
+.carousel__botao--anterior {
+    left: 0;
+
+    margin-left: 1rem;
+
+    background-image: url(../img/seta-esquerda.svg);
+    background-position: .8rem center;
+}
+
+.carousel__botao--proximo {
+    right: 0;
+
+    margin-right: 1rem;
+
+    background-image: url(../img/seta-direita.svg);
+    background-position: .95rem center;
+}
+
+.carousel__lista-produtos {
+    position: relative;
+
+    height: 100%;
+
+    transition: transform .25s;
+}
+
+.carousel__produto {
+    position: absolute;
+
+    /* imagem centralizada */
+    top: 0;
+    bottom: 0;
+
+    width: 100%;
+}
+
+.carousel__imagem-container {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel__imagem {
+    width: 100%;
+    height: 100%;
+
+    /* caso o conteúdo seja maior que o container, ele vaze sem mostrar e distorcer a imagem */
+    object-fit: cover;
+}
+
+.carousel__indicadores {
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.carousel__indicador {
+    width: 2.25rem;
+    height: .25rem;
+
+    background-color: var(--branco-transparente);
+
+    border-radius: 2rem;
+
+    border: none;
+    margin: .5rem 1rem;
+}
+
+.carousel__indicador--ativo {
+    background-color: var(--laranja);
+}
